@@ -1,0 +1,26 @@
+table {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+
+  td {
+    padding: 40px;
+    &:hover {
+      cursor: pointer;
+      background-color: fade(#f00, 10%);
+    }
+
+    &.booked {
+      background-color: fade(#0f0, 10%);
+    }
+
+    .name {
+      font-size: 160%;
+    }
+
+    .booking {
+      font-size: 80%;
+      display: block;
+    }
+  }
+}

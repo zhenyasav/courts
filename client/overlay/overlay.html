@@ -1,0 +1,11 @@
+<template name="overlay">
+  <div class="overlay {{overlayShowing}}">
+    <div class="container">
+      <p>Choose your booking</p>
+      {{#each bookingOptions}}
+        <a class="book">{{.}}</a>
+      {{/each}}
+      <a class="cancel">Cancel</a>
+    </div>
+  </div>
+</template>

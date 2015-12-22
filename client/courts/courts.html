@@ -1,0 +1,16 @@
+<template name="courts">
+  <table>
+    {{#each allCourts}}
+      <tr>
+        {{#each . }}
+          <td class="{{isBooked}}">
+            <span class="name">{{name}}</span>
+            {{#if booking}}
+              <span class="booking">{{booking}}</span>
+            {{/if}}
+          </td>
+        {{/each}}
+      </tr>
+    {{/each}}
+  </table>
+</template>

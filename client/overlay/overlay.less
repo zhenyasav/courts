@@ -1,0 +1,29 @@
+.overlay {
+
+  display: none;
+
+  &.showing {
+    display: block;
+  }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+
+    a {
+      padding: 10px;
+      display: block;
+      border: 1px solid fade(#000, 10%);
+
+      &:hover {
+        background-color: fade(#000, 10%);
+        cursor: pointer;
+      }
+    }
+
+    a+a {
+      border-top: none;
+    }
+  }
+}
